@@ -1,168 +1,186 @@
 body {
-  min-width: 350px;
-  background-color: #40E0D0;
+    min-width: 350px;
+    background-color: #40E0D0;
 }
 
-header, details {
-  background-color: #C0C0C0;
-  padding: 5px 0 0 0;
-  border: 1px solid black;
+header,
+details {
+    background-color: #C0C0C0;
+    padding: 5px 0 0 0;
+    border: 1px solid black;
 }
 
 footer {
-  background-color: darkgray;
-  margin: 20px 0 0 0;
-  padding: 15px 0;
-  text-align: center;
-  border: 1px solid black;
+    background-color: darkgray;
+    margin: 20px 0 0 0;
+    padding: 15px 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#portfolio .item {
+    text-align: center;
 }
 
 h1 {
-  color: white;
-  font-size: 36px;
-  font-family: "Lucida Console", Monaco, monospace;
-  padding: 60px 10px 20px 20px;
-  margin: 0;
+    color: black;
+    font-size: 36px;
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 60px 10px 20px 20px;
+    margin: 0;
 }
 
-h2, ul, ol, label {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+h2,
+ul,
+ol,
+label {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 p {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size:16px;
-  text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
 
-ul, ol {
-  font-size: 16px;
+ul,
+ol {
+    font-size: 16px;
 }
 
 main {
-  padding-left: 20px;
-  padding: 20px;
+    padding-left: 20px;
+    padding: 20px;
 }
 
-.about, p, h2 {
-  text-align: center;
+.about,
+p,
+h2 {
+    text-align: center;
 }
 
 .contact-me {
-  text-align: left;
+    text-align: left;
 }
 
 img.placeholder {
-  width: 150px;
-  border: solid black 2px;
-  border-radius: 8px;
+    width: 150px;
+    border: solid black 2px;
+    border-radius: 8px;
 }
 
 header .group {
-  width: 100%;
-  align-content: space-between;
+    width: 100%;
+    align-content: space-between;
 }
 
+
 /* nav box for contact me */
+
 nav {
-  font-family: "Lucida Console", Monaco, monospace;
-  background-color: #40E0D0;
-  border: 2px solid #000;
-  width: fit-content;
-  float: right;
-  padding: 0 10px;
-  text-align: center;
-  color: black;
+    font-family: "Lucida Console", Monaco, monospace;
+    background-color: #40E0D0;
+    border: 2px solid #000;
+    width: fit-content;
+    float: right;
+    padding: 0 10px;
+    text-align: center;
+    color: black;
 }
 
 header nav {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
 }
 
 header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px 0 0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px 0 0;
 }
 
 header nav ul li:last-child a {
-  margin-right: 0;
+    margin-right: 0;
 }
+
 
 /*contact me section*/
+
 article {
-  padding: 10px;
+    padding: 10px;
 }
+
 
 /*picture of me*/
-img { 
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+
 /* Mobile */
+
 .group {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .item {
-  flex: 1;
-  margin: 10px;
+    flex: 1;
+    margin: 10px;
 }
+
 
 /* Desktop */
 
 @media all and (min-width: 600px) {
-  .group {
-    flex-direction: row;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 30px;
-  }
-
-  header h1 {
-    margin: 14px 0;
-    padding-top: 0;
-  }
-  
-  header nav {
-    margin-top: 8px;
-  }
-
-  header nav ul li a:hover {
-    color: #bdbdbd;
-  }
+    .group {
+        flex-direction: row;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    header h1 {
+        margin: 14px 0;
+        padding-top: 0;
+    }
+    header nav {
+        margin-top: 8px;
+    }
+    header nav ul li a:hover {
+        color: #bdbdbd;
+    }
 }
+
 
 /* Contact Form */
 
 form {
-  padding-right: 20px;
+    padding-right: 20px;
 }
 
 form label {
-  display: block;
+    display: block;
 }
 
-form input, 
+form input,
 form textarea {
-  width: 100%;
-  margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 form textarea {
-  height: 150px;
+    height: 150px;
 }
