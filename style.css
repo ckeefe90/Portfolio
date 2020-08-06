@@ -1,21 +1,35 @@
 body {
     min-width: 350px;
-    background-color: #40E0D0;
+    background-color: #C0C0C0;
 }
 
 header,
 details {
-    background-color: #C0C0C0;
+    background-color: #009999;
     padding: 5px 0 0 0;
     border: 1px solid black;
 }
 
+.left {
+    text-align: left;
+}
+
 footer {
-    background-color: darkgray;
+    background-color: #009999;
     margin: 20px 0 0 0;
     padding: 15px 0;
     text-align: center;
     border: 1px solid black;
+}
+
+#photo {
+    border-radius: 30%;
+}
+
+#project-photo {
+    width: 350px;
+    border: solid black 2px;
+    border-radius: 8px;
 }
 
 #portfolio .item {
@@ -30,22 +44,20 @@ h1 {
     margin: 0;
 }
 
-h2,
-ul,
-ol,
-label {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-p {
+body {
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 16px;
-    text-align: center;
 }
 
-ul,
-ol {
-    font-size: 16px;
+a {
+    text-color: black;
+}
+
+#about {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
 }
 
 main {
@@ -54,7 +66,6 @@ main {
 }
 
 .about,
-p,
 h2 {
     text-align: center;
 }
@@ -79,7 +90,7 @@ header .group {
 
 nav {
     font-family: "Lucida Console", Monaco, monospace;
-    background-color: #40E0D0;
+    background-color: #009999;
     border: 2px solid #000;
     width: fit-content;
     float: right;

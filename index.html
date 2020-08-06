@@ -35,25 +35,27 @@
         <article id="home">
             <div class="group">
                 <div class="item">
-                    <img src="image/me.PNG" alt="Caitlin Keefe - Profile Photo">
+                    <img src="image/me.PNG" id="photo" alt="Caitlin Keefe - Profile Photo">
                 </div>
-                <div class="item">
+                <div class="home">
                     <h2>Hi, I'm Caitlin! I'm an aspiring software developer in Haverhill, Massachusetts.</h2>
-                    <p>I realized at a young age that I have a passion for both learning and teaching. After high school I became a Preschool Teacher for about 5 years. While I loved teaching I ended up making a career change into the office world. I spent
-                        the next 5 years working at an equipment leasing company learning everything I could about the processes and procedures for multiple departments. Before long I was creating a delinquency calendar for the collections team and creating
-                        e-mail templates for multiple departments to use; among other things.</p>
+                    <div class="left">
+                        <p>I realized at a young age that I have a passion for both learning and teaching. After high school I became a Preschool Teacher for about 5 years. While I loved teaching I ended up making a career change into the office world. I
+                            spent the next 5 years working at an equipment leasing company learning everything I could about the processes and procedures for multiple departments. Before long I was creating a delinquency calendar for the collections team
+                            and creating e-mail templates for multiple departments to use; among other things.</p>
 
-                    <p>This left me wanting to know more about the technical side of things. Like the most efficient way to create and deploy the templates to the teams. What goes into creating a functional application or website. How buttons are added,
-                        updated or removed. At the end of June 2020 I enrolled as a student at Thinkful for Software Engineering and started my journey to become a software engineer! I can't wait to complete this bootcamp and start working as a professional
-                        software engineer with a team of experienced programmers to learn hands on from them and to share any new knowledge I have that they may not know.</p>
+                        <p>This left me wanting to know more about the technical side of things. Like the most efficient way to create and deploy the templates to the teams. What goes into creating a functional application or website. How buttons are added,
+                            updated or removed. At the end of June 2020 I enrolled as a student at Thinkful for Software Engineering and started my journey to become a software engineer! I can't wait to complete this bootcamp and start working as a professional
+                            software engineer with a team of experienced programmers to learn hands on from them and to share any new knowledge I have that they may not know.</p>
+                    </div>
                 </div>
             </div>
         </article>
 
         <!-- About me -->
-        <article id="about">
+        <article>
             <details>
-                <summary>A Little About Me</summary>
+                <summary id="about">A Little About Me</summary>
                 <h2>As a professional software engineer I hope to:</h2>
                 <p>Do freelance work with small business owners to create the website of their dreams at an affordable rate.
                 </p>
@@ -85,24 +87,53 @@
         <!-- Portfolio -->
         <article id="portfolio">
             <h2>Portfolio</h2>
-            <div class="item">
-                <p>I don't have any personal projects yet but will update this as I do.</p>
+            <div>
+                <img src="image/90sQuizApp.jpg" id="project-photo" alt="90sQuizApp">
+                <h2>90s boyband quiz app</h2>
+                <p>Test your knowledge of 90s boy bands with this 10 question quiz. Wrong answers will show the correct answer. There are 3 different result categories.</p>
+                <h3>Tech stack</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <a href="https://ckeefe90.github.io/90s-Boyband-Quiz-App/">Were You a 90s boy band SUPERFAN?</a>
+                <br>
+                <a href="https://github.com/ckeefe90/90s-Boyband-Quiz-App">90s Quiz App Source Code</a>
             </div>
-            <div class="item">
+            <div>
+                <img src="image/recipeAppPreview.jpg" id="project-photo" alt="recipe-app-preview">
+                <h2>Find Me a Recipe</h2>
+                <p>Users can see up to 10 random recipes. The recipes can be personalized with some customizations. Results will include the ingredients, the source URL to take users to the original recipe and an image for each recipe if available.
+                    <h3>Tech stack</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </p>
+                <a href="https://ckeefe90.github.io/Find-Me-a-Recipe/">Find me a recipe!</a>
+                <br>
+                <a href="https://github.com/ckeefe90/Find-Me-a-Recipe">Recipe App Source Code</a>
+            </div>
+            <div>
                 <img src="image/lightning.png" alt="lighting" class="placeholder">
                 <h2>Caitlin's Cookbook</h2>
-                <p>This will eventually be a functioning multi-page online cookbook complete with pictures and recipes. Tech stack Javascript, HTML & CSS.</p>
-                <a href="#">Caitlin's Cookbook</a>
-                <br />
-                <a href="#">Source Code</a>
+                <p>This will eventually be a functioning multi-page online cookbook complete with pictures and recipes.</p>
+                <h3>Tech stack</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
             </div>
         </article>
 
         <!-- Contact -->
-        <article id="contact-me">
+        <article>
             <h2> Contact Me:</h2>
-            <div class="group">
-                <div class="item">
+            <div class="contact-me">
+                <div>
                     <form action="https://formspree.io/xoqkpljz" method="POST">
                         <label for="user-name">Name:</label>
                         <input id="user-name" type="text" name="name">
@@ -115,12 +146,12 @@
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                <div class="item">
+                <div class="network-links">
                     <ul>
                         <li> <a target=_blank href="https://github.com/ckeefe90">GitHub</a> </li>
                         <li> <a target=_blank href="https://www.linkedin.com/in/caitlin-keefe-ba8673135/">LinkedIn</a> </li>
                     </ul>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46852.14375008893!2d-71.12540336590384!3d42.7828745597994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3022cbba67eef%3A0xb3350b93f7fb0d23!2sHaverhill%2C%20MA!5e0!3m2!1sen!2sus!4v1594770598421!5m2!1sen!2sus"
+                    <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46852.14375008893!2d-71.12540336590384!3d42.7828745597994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3022cbba67eef%3A0xb3350b93f7fb0d23!2sHaverhill%2C%20MA!5e0!3m2!1sen!2sus!4v1594770598421!5m2!1sen!2sus"
                         width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
