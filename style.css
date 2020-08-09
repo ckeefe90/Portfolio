@@ -1,17 +1,22 @@
 body {
     min-width: 350px;
     background-color: #C0C0C0;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    align-content: space-between;
 }
 
 header,
 details {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #009999;
     padding: 5px 0 0 0;
     border: 1px solid black;
-}
-
-.left {
-    text-align: left;
 }
 
 footer {
@@ -26,14 +31,29 @@ footer {
     border-radius: 30%;
 }
 
+#home {
+    display: flex;
+    justify-content: space-between;
+}
+
 #project-photo {
     width: 350px;
     border: solid black 2px;
     border-radius: 8px;
 }
 
-#portfolio .item {
+#portfolio {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+}
+
+.projects,
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -44,30 +64,21 @@ h1 {
     margin: 0;
 }
 
-body {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
-}
-
-a {
-    text-color: black;
-}
-
-#about {
-    font-size: 20px;
-    font-weight: 600;
-    padding: 20px 0;
-    text-align: center;
-}
-
-main {
-    padding-left: 20px;
-    padding: 20px;
-}
-
-.about,
 h2 {
     text-align: center;
+}
+
+#about-me {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0;
+    text-align: center;
+}
+
+main,
+details {
+    padding-left: 20px;
+    padding: 20px;
 }
 
 .contact-me {
@@ -80,9 +91,8 @@ img.placeholder {
     border-radius: 8px;
 }
 
-header .group {
-    width: 100%;
-    align-content: space-between;
+details {
+    width: 97.5%;
 }
 
 
@@ -95,13 +105,7 @@ nav {
     width: fit-content;
     float: right;
     padding: 0 10px;
-    text-align: center;
     color: black;
-}
-
-header nav {
-    display: flex;
-    justify-content: center;
 }
 
 header nav ul {
@@ -122,13 +126,6 @@ header nav ul li:last-child a {
 }
 
 
-/*contact me section*/
-
-article {
-    padding: 10px;
-}
-
-
 /*picture of me*/
 
 img {
@@ -140,15 +137,16 @@ img {
 
 /* Mobile */
 
-.group {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.item {
-    flex: 1;
-    margin: 10px;
+@media only screen and (max-width: 480px) {
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .item {
+        flex: 1;
+        margin: 10px;
+    }
 }
 
 
