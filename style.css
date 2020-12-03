@@ -34,6 +34,7 @@ footer {
 #home {
     display: flex;
     justify-content: space-between;
+    margin: 2px;
 }
 
 #project-photo {
@@ -49,8 +50,13 @@ footer {
     text-align: center;
 }
 
+#portfolio li {
+    list-style-type: none;
+}
+
 .projects,
-.contact-me {
+.contact-me,
+.home {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
