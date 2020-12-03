@@ -3,6 +3,7 @@ body {
     background-color: #C0C0C0;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 16px;
+    width: 100%;
 }
 
 header {
@@ -47,7 +48,8 @@ footer {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1rem;
+    justify-content: center;
     text-align: center;
 }
 
@@ -55,11 +57,16 @@ footer {
     list-style-type: none;
 }
 
+#portfolio ul {
+    padding-inline-start: 0;
+}
+
 .projects,
 .contact-me,
-.home {
+#home {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
     justify-content: space-evenly;
 }
 
