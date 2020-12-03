@@ -28,17 +28,23 @@ footer {
     border: 1px solid black;
 }
 
-#photo {
-    border-radius: 30%;
-}
-
 #home {
     display: flex;
     justify-content: space-between;
     margin: 2px;
 }
 
-#project-photo {
+
+/* Photos */
+
+#photo {
+    border-radius: 30%;
+}
+
+#quiz-app-photo,
+#recipe-photo,
+#hoppy-hunting-photo,
+#pizza-photo {
     width: 350px;
     border: solid black 2px;
     border-radius: 8px;
